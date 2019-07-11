@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Poiret+One&display=swap');
+
+body {
+  font-family: 'Poiret One', cursive;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  font-size: 145%;
+  margin-right: 2%;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+h1 {
+  /* font-size: 105%; */
+}
+
+.vermilion {
+  color: #E34234;
+}
+
+.saffron {
+  color: #F4C430;
+}
+
+.viridian {
+  color: #40826D;
+}
+
+.cerulean {
+  color: #007BA7;
+}
+
+.lavender {
+  color: #E6E6FA;
+}
