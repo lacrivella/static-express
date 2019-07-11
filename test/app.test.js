@@ -16,6 +16,9 @@ describe('app aroute', () => {
   });
   it('creates data on color link', () => {
     return request(app)
-    .get(`/colors.html?=lavender`)
-  })
+      .get(`/colors.html?=lavender`)
+      .then(res => {
+        expect(res.text).toEqual(expect.stringContaining('Color'));
+      });
+  });
 });

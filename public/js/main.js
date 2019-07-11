@@ -8,6 +8,7 @@ fetch('/api/v1/colors')
       const li = document.createElement('li');
       const a = document.createElement('a');
       a.href = `/colors.html?name=${color.name}`;
+      a.classList.add(`${color.name}`);
       a.textContent = `${color.name}`;
       li.appendChild(a);
       colorList.appendChild(li);
