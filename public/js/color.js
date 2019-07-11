@@ -1,14 +1,16 @@
-const colorRoot = document.getElementById('color-root');
-const colorList = document.createElement('ul');
+const root = document.getElementById('root');
+const p = document.createElement('p');
 
-fetch('/api/v1/colors')
+const search = new URLSearchParams(window.location.search);
+const name = search.get('name');
+
+fetch(`/api/v1/colors/${name}`)
   .then(res => res.json())
-  .then(colors => {
-    colors.forEach(color => {
-      const li = document.createElement('li');
-      li.textContent = `${color.name}`;
-      colorList.appendChild(li);
-    });
+  .then(color => {
+    p.textContent = `${color.name}`;
   });
 
-colorRoot.appendChild(colorList);
+root.appendChild(p);
+
+
+
