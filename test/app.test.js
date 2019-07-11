@@ -14,4 +14,8 @@ describe('app aroute', () => {
         ]);
       });
   });
+  it('creates data on color link', () => {
+    return request(app)
+    .get(`/api/v1/colors`)
+  })
 });
